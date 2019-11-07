@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Зайцев](https://up.htmlacademy.ru/adaptive/18/user/989843).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Кушнир](https://htmlacademy.ru/profile/id485545).
 
 ---
 
