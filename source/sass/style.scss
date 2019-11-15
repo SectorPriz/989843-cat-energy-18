@@ -6,11 +6,6 @@
 
 html {
   box-sizing: border-box;
-  font-family: "Oswald", "ArialMT", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: normal;
-  font-style: normal;
 }
 
 img {
@@ -18,9 +13,22 @@ img {
   max-width: 100%;
 }
 
+body {
+  margin: 0;
+  font-family: "Oswald", "ArialMT", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
 }
+
+$font-ArialMT: "ArialMT", "Arial", sans-serif;
+$color-white: #ffffff;
+$padding-container: 0 20px;
 
 @import "fonts";
 @import "mixins";
@@ -45,3 +53,4 @@ a {
 @import "blocks/programs-selection";
 @import "blocks/site-list";
 @import "blocks/footer";
+@import "blocks/site-container";

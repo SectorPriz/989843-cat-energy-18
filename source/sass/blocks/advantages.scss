@@ -1,0 +1,106 @@
+.advantages {
+  padding: $padding-container;
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0;
+}
+
+.advantages__item {
+  background-color: #f2f2f2;
+  padding: 30px 21px 14px 30px;
+  margin-bottom: 10px;
+}
+
+.advantages__title {
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  padding-left: 70px;
+  margin: 0;
+  position: relative;
+}
+
+.advantages__title--sit-before {
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #5eaa2f;
+    background-position: center;
+    border-radius: 50px;
+    top: -7px;
+    left: 0;
+    position: absolute;
+  }
+}
+
+.advantages__title--sit-after {
+  &::after {
+    content: "";
+    width: 35px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -10px;
+    left: 10px;
+    position: absolute;
+  }
+}
+
+.advantages__title--stand-before {
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #5eaa2f;
+    background-position: center;
+    border-radius: 50px;
+    top: -7px;
+    left: 0;
+    position: absolute;
+  }
+}
+
+.advantages__title--stand-after {
+  &::after {
+    content: "";
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 6px;
+    left: -8px;
+    position: absolute;
+  }
+}
+
+.advantages__description {
+  font-family: $font-ArialMT;
+  font-size: 14px;
+  line-height: 18px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 20px;
+}
+
+.advantages__link {
+  &::before {
+    content: "";
+    width: 25px;
+    height: 12px;
+    background: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    top: 6px;
+    right: -36px;
+    position: absolute;
+  }
+  line-height: 16px;
+  text-transform: uppercase;
+  position: relative;
+}

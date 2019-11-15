@@ -1,0 +1,18 @@
+.collaboration__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: $padding-container;
+}
+
+.collaboration__title {
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.collaboration__address {
+  color: #444444;
+  font-family: $font-ArialMT;
+  font-size: 14px;
+  line-height: 20px;
+}
