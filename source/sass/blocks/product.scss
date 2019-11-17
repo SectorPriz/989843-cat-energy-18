@@ -16,6 +16,10 @@
 .product__description {
   display: flex;
   flex-direction: column;
+  color: #444444;
+  font-family: $font-ArialMT;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .product__description-wrapper {
@@ -24,18 +28,10 @@
 }
 
 .product__description-name {
-  color: #444444;
-  font-family: $font-ArialMT;
-  font-size: 12px;
-  line-height: 16px;
   margin: 0;
 }
 
 .product__description-value {
-  color: #444444;
-  font-family: $font-ArialMT;
-  font-size: 12px;
-  line-height: 16px;
   margin: 0;
 }
 

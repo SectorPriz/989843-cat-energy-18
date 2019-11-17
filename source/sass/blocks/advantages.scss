@@ -14,6 +14,11 @@
 }
 
 .advantages__title {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
   font-weight: 400;
   text-align: left;
   text-transform: uppercase;
@@ -26,7 +31,6 @@
 
 .advantages__title--sit-before {
   &::before {
-    content: "";
     width: 50px;
     height: 50px;
     background-color: #5eaa2f;
@@ -34,13 +38,11 @@
     border-radius: 50px;
     top: -7px;
     left: 0;
-    position: absolute;
   }
 }
 
 .advantages__title--sit-after {
   &::after {
-    content: "";
     width: 35px;
     height: 49px;
     background-image: url("../img/icon-cat-slim.svg");
@@ -48,13 +50,11 @@
     background-position: center;
     top: -10px;
     left: 10px;
-    position: absolute;
   }
 }
 
 .advantages__title--stand-before {
   &::before {
-    content: "";
     width: 50px;
     height: 50px;
     background-color: #5eaa2f;
@@ -62,13 +62,11 @@
     border-radius: 50px;
     top: -7px;
     left: 0;
-    position: absolute;
   }
 }
 
 .advantages__title--stand-after {
   &::after {
-    content: "";
     width: 67px;
     height: 28px;
     background-image: url("../img/icon-cat-pro.svg");
@@ -76,16 +74,7 @@
     background-position: center;
     top: 6px;
     left: -8px;
-    position: absolute;
   }
-}
-
-.advantages__description {
-  font-family: $font-ArialMT;
-  font-size: 14px;
-  line-height: 18px;
-  border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 20px;
 }
 
 .advantages__link {
@@ -103,4 +92,12 @@
   line-height: 16px;
   text-transform: uppercase;
   position: relative;
+}
+
+.advantages__description {
+  font-family: $font-ArialMT;
+  font-size: 14px;
+  line-height: 18px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 20px;
 }

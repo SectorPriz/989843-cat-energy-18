@@ -1,8 +1,6 @@
 .site-container {
   margin: 0 auto;
+  /*width: auto;*/
+  /*Временно, для удобства*/
   max-width: 320px;
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
 }

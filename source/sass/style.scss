@@ -15,7 +15,7 @@ img {
 
 body {
   margin: 0;
-  font-family: "Oswald", "ArialMT", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -51,6 +51,6 @@ $padding-container: 0 20px;
 @import "blocks/product-catalog";
 @import "blocks/program-form";
 @import "blocks/programs-selection";
-@import "blocks/site-list";
+@import "blocks/site-navigation";
 @import "blocks/footer";
 @import "blocks/site-container";
