@@ -1,0 +1,28 @@
+.site-navigation {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.site-navigation__link {
+  font-size: 20px;
+  color: #111111;
+}
+
+.site-navigation__item {
+  border-top: 1px solid #ebebeb;
+}
+
+.site-navigation__item--index {
+  padding: 21px 0 22px;
+}
+
+.site-navigation__item--catalog {
+  padding: 21px 0 22px;
+}
+
+.site-navigation__item--programs {
+  padding: 21px 0 22px;
+}

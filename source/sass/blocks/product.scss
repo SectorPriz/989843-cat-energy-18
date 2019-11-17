@@ -1,0 +1,47 @@
+.product {
+  display: flex;
+  align-items: center;
+}
+
+.product__title {
+  margin: 0;
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-right: 70px;
+  padding-bottom: 5px;
+}
+
+.product__description {
+  display: flex;
+  flex-direction: column;
+  color: #444444;
+  font-family: $font-ArialMT;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product__description-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__description-name {
+  margin: 0;
+}
+
+.product__description-value {
+  margin: 0;
+}
+
+.product__wrapper-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product__button {
+  text-align: center;
+  padding: 10px 0;
+}

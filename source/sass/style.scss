@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+$font-ArialMT: "ArialMT", "Arial", sans-serif;
+$color-white: #ffffff;
+$padding-container: 0 20px;
+
+@import "fonts";
+@import "mixins";
+@import "blocks/visually-hidden";
+@import "blocks/button";
+@import "blocks/main-nav";
+@import "blocks/main-page";
+@import "blocks/main-program";
+@import "blocks/additional-card";
+@import "blocks/additional-products";
+@import "blocks/advantages";
+@import "blocks/collaboration";
+@import "blocks/example";
+@import "blocks/features";
+@import "blocks/hero";
+@import "blocks/main-catalog";
+@import "blocks/more-products";
+@import "blocks/page-header";
+@import "blocks/product";
+@import "blocks/product-catalog";
+@import "blocks/program-form";
+@import "blocks/programs-selection";
+@import "blocks/site-navigation";
+@import "blocks/footer";
+@import "blocks/site-container";

@@ -1,0 +1,25 @@
+.additional-card {
+  display: flex;
+  flex-direction: column;
+  padding: $padding-container;
+}
+
+.additional-card__description {
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-ArialMT;
+  color: #444444;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-card__title {
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional-card__button {
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
