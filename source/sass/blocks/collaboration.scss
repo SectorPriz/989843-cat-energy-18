@@ -1,17 +1,17 @@
 .collaboration__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: $padding-container;
+  padding: $padding-item;
 }
 
 .collaboration__title {
-  color: #111111;
+  color: $color-oswald;
   font-size: 16px;
   line-height: 20px;
 }
 
 .collaboration__address {
-  color: #444444;
+  color: $color-arial;
   font-family: $font-ArialMT;
   font-size: 14px;
   line-height: 20px;

@@ -1,9 +1,7 @@
 .page-header__nav-header {
-  color: #111111;
+  color: $color-oswald;
   background-color: #ffffff;
   display: flex;
-  position: relative;
-  align-items: center;
 }
 
 .page-header__logo-link {
@@ -20,5 +18,25 @@
   margin-right: 20px;
   border-style: none;
   background-color: #ffffff;
-  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-img {
+    padding: 0;
+  }
 }

@@ -1,10 +1,9 @@
 .advantages {
-  padding: $padding-container;
+  padding: $padding-item;
 }
 
 .advantages__list {
-  list-style: none;
-  padding: 0;
+  @include reset-list;
 }
 
 .advantages__item {
@@ -95,6 +94,7 @@
 }
 
 .advantages__description {
+  color: $color-arial;
   font-family: $font-ArialMT;
   font-size: 14px;
   line-height: 18px;

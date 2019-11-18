@@ -1,14 +1,23 @@
-.hero {
+.hero__wrapper-title {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: stretch;
   background-color: #5eaa2f;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   top: 0;
   left: 0;
-  position: relative;
-  padding: $padding-container;
+}
+
+.hero__wrapper-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+  margin-top: -135px;
+  padding-bottom: 20px;
 }
 
 .hero__title {
@@ -16,26 +25,73 @@
   text-align: center;
   font-size: 36px;
   line-height: 36px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 30px;
 }
 
 .hero__subtitle {
   color: $color-white;
   font-size: 14px;
   line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 165px;
+  margin: 0;
+  padding-top: 24px;
 }
 
 .hero__button {
-  padding: 12px 68px;
+  color: $color-white;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 13px 78px;
 }
 
-.hero__wrapper-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: $tablet-width) {
+  .hero {
+    padding-left: 90px;
+  }
 }
 
-.hero__wrapper-img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: $tablet-width) {
+  .hero__title {
+    color: $color-oswald;
+    font-size: 60px;
+    line-height: 60px;
+    padding-right: 60px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__subtitle {
+    color: $color-oswald;
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__wrapper-title {
+    background: none;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__wrapper-img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__img {
+    order: 2;
+  }
 }

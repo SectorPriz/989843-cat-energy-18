@@ -1,17 +1,16 @@
 .product-catalog__title {
-  color: #111111;
+  color: $color-oswald;
   font-size: 36px;
   line-height: 60px;
   border-bottom: 1px solid #d9d9d9;
-  padding: $padding-container;
+  padding: $padding-item;
   margin: 0;
 }
 
 .product-catalog__list {
+  @include reset-list;
   display: flex;
   flex-direction: column;
-  list-style: none;
-  padding: 0;
 }
 
 .product-catalog__item {

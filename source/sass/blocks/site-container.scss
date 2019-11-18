@@ -1,6 +1,17 @@
 .site-container {
   margin: 0 auto;
-  /*width: auto;*/
-  /*Временно, для удобства*/
-  max-width: 320px;
+  min-width: 340px;
+  padding: 0 3%;
+}
+
+@media (min-width: $tablet-width) {
+  margin: 0 auto;
+  min-width: 768px;
+  padding: 0 5%;
+}
+
+@media (min-width: $desktop-width) {
+  margin: 0 auto;
+  min-width: 1440px;
+  padding: 0 10%;
 }

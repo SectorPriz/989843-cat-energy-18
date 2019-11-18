@@ -1,5 +1,5 @@
 .footer {
-  padding: $padding-container;
+  padding: $padding-item;
   display: flex;
   flex-direction: column;
 }
@@ -20,6 +20,7 @@
 }
 
 .footer__academy-name {
+  color: $color-arial;
   font-family: $font-ArialMT;
   font-size: 16px;
   line-height: 16px;
