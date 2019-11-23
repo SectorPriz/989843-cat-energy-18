@@ -5,13 +5,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  margin: 0 auto;
-  min-width: 768px;
-  padding: 0 5%;
+  .site-container {
+    margin: 0 auto;
+    min-width: 768px;
+    padding: 0 5%;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  margin: 0 auto;
-  min-width: 1440px;
-  padding: 0 10%;
+  .site-container {
+    margin: 0 auto;
+    min-width: 1440px;
+    padding: 0 10%;
+  }
 }
