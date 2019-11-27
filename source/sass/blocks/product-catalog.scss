@@ -36,12 +36,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-around;
   }
 }
 
 @media (min-width: $tablet-width) {
   .product-catalog__item {
-    padding: 0 0 40px 0;
+    margin-bottom: 140px;
     background-color: #f2f2f2;
+    padding: 0;
+    border: none;
   }
 }
