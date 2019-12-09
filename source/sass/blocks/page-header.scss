@@ -34,9 +34,16 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .page-header__logo-img {
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: absolute;
+    width: 100%;
+    z-index: 9;
   }
 }

@@ -1,14 +1,13 @@
 .site-container {
   margin: 0 auto;
   min-width: 340px;
-  padding: 0 3%;
+  /*проставь паддинги везде*/
 }
 
 @media (min-width: $tablet-width) {
   .site-container {
     margin: 0 auto;
     min-width: 768px;
-    padding: 0 5%;
   }
 }
 
@@ -16,6 +15,5 @@
   .site-container {
     margin: 0 auto;
     min-width: 1440px;
-    padding: 0 10%;
   }
 }
