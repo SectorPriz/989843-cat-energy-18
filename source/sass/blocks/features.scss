@@ -65,27 +65,21 @@
     font-size: 60px;
     line-height: 60px;
   }
-}
 
-@media (min-width: $tablet-width) {
   .features__item::before {
     width: 80px;
     height: 80px;
     left: 0;
     top: 0;
   }
-}
 
-@media (min-width: $tablet-width) {
   .features__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 0;
   }
-}
 
-@media (min-width: $tablet-width) {
   .features__item {
     font-size: 16px;
     line-height: 24px;
@@ -94,9 +88,7 @@
     padding-bottom: 90px;
     z-index: 2;
   }
-}
 
-@media (min-width: $tablet-width) {
   .features {
     padding: 0;
   }

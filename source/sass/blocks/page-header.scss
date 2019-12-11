@@ -1,3 +1,8 @@
+.page-header {
+  position: relative;
+  /*Внимание, внимание!!!*/
+}
+
 .page-header__nav-header {
   color: $color-oswald;
   background-color: #ffffff;
@@ -25,16 +30,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
-}
 
-@media (min-width: $tablet-width) {
   .page-header__toggle {
     display: none;
   }
-}
 
-@media (min-width: $tablet-width) {
   .page-header__logo-img {
     padding: 0;
   }
@@ -44,6 +46,10 @@
   .page-header {
     position: absolute;
     width: 100%;
+    max-width: 1220px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 9;
   }
 }
