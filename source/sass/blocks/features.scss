@@ -1,5 +1,4 @@
 .features {
-  padding: $padding-item;
   display: flex;
   flex-direction: column;
 }
@@ -75,7 +74,6 @@
 
   .features__list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 0;
   }
@@ -91,5 +89,12 @@
 
   .features {
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item {
+    padding-right: 0;
+    width: 25%;
   }
 }
