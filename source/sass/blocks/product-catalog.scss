@@ -16,7 +16,9 @@
 
 .product-catalog__item {
   border-bottom: 1px solid #d9d9d9;
-  padding: 25px 20px;
+}
+
+.product-catalog__item-wrapper {
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -29,22 +31,21 @@
     border: none;
     padding: 70px 0 156px 0;
   }
-}
 
-@media (min-width: $tablet-width) {
+  .product-catalog__item-wrapper {
+    background-color: #f2f2f2;
+    width: 324px;
+  }
+
   .product-catalog__list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
+    margin: 0 -30px;
   }
-}
 
-@media (min-width: $tablet-width) {
   .product-catalog__item {
     margin-bottom: 140px;
-    background-color: #f2f2f2;
-    padding: 0;
     border: none;
+    padding: 0 30px;
   }
 }
