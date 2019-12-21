@@ -1,6 +1,5 @@
 .page-header {
   position: relative;
-  /*Внимание, внимание!!!*/
 }
 
 .page-header__nav-header {
@@ -34,6 +33,7 @@
 
   .page-header__nav-header {
     padding-left: 30px;
+    padding-right: 0;
   }
 
   .page-header__toggle {
@@ -54,5 +54,9 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 9;
+  }
+
+  .page-header__nav-header {
+    padding: 0;
   }
 }
