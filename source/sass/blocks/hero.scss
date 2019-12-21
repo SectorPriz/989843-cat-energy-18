@@ -1,14 +1,18 @@
-.hero {
+.hero__wrapper-title {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #5eaa2f;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  top: 0;
-  left: 0;
-  position: relative;
-  padding: $padding-container;
+  background-position: top;
+}
+
+.hero__wrapper-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -135px;
+  padding-bottom: 20px;
 }
 
 .hero__title {
@@ -16,26 +20,110 @@
   text-align: center;
   font-size: 36px;
   line-height: 36px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 30px;
 }
 
 .hero__subtitle {
   color: $color-white;
   font-size: 14px;
   line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 157px;
+  margin: 0;
+  padding-top: 24px;
 }
 
 .hero__button {
-  padding: 12px 68px;
+  color: $color-white;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 13px 0;
 }
 
-.hero__wrapper-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: $tablet-width) {
+  .hero {
+    background: none;
+  }
+
+  .hero__wrapper {
+    padding-left: 86px;
+  }
+
+  .hero__wrapper--desktop {
+    padding-left: 86px;
+  }
+
+  .hero__wrapper-title {
+    background: none;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+
+  .hero__wrapper-img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  .hero__title {
+    color: $color-oswald;
+    font-size: 60px;
+    line-height: 60px;
+    padding-right: 60px;
+    text-align: left;
+  }
+
+  .hero__img {
+    order: 2;
+  }
+
+  .hero__subtitle {
+    color: $color-oswald;
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .hero__button {
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 16px 0;
+  }
 }
 
-.hero__wrapper-img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: $desktop-width) {
+  .hero {
+    display: flex;
+  }
+
+  .hero__wrapper {
+    display: flex;
+    padding: 0;
+    padding-top: 120px;
+    background-color: #ffffff;
+    width: 50%;
+    z-index: 1;
+  }
+
+  .hero__wrapper--desktop {
+    width: 50%;
+    background-color: #68b738;
+    padding-top: 120px;
+  }
+
+  .hero__wrapper-img {
+    flex-direction: row;
+  }
+
+  .hero__title {
+    padding: 0;
+  }
 }

@@ -26,9 +26,15 @@ a {
   text-decoration: none;
 }
 
+$mobil-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
 $font-ArialMT: "ArialMT", "Arial", sans-serif;
 $color-white: #ffffff;
-$padding-container: 0 20px;
+$padding-item: 0 20px;
+$color-oswald: #111111;
+$color-arial: #444444;
+$fill-footer-svg: #666666;
 
 @import "fonts";
 @import "mixins";
@@ -53,4 +59,4 @@ $padding-container: 0 20px;
 @import "blocks/programs-selection";
 @import "blocks/site-navigation";
 @import "blocks/footer";
-@import "blocks/site-container";
+@import "blocks/container";

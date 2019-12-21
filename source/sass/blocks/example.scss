@@ -1,25 +1,25 @@
 .example {
   background-color: #f2f2f2;
-  padding: $padding-container;
 }
 
 .example__title {
+  color: $color-oswald;
   font-size: 36px;
   line-height: 60px;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 .example__description {
+  color: $color-arial;
   font-family: $font-ArialMT;
   font-size: 14px;
   line-height: 18px;
 }
 
 .example__illustration-list {
+  @include reset-list;
   display: flex;
   justify-content: space-between;
-  list-style: none;
-  padding: 0;
 }
 
 .example__illustration-item {
@@ -35,8 +35,6 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   margin: 0;
-  /*временно*/
-  width: 124px;
 }
 
 .example__illustration-value--border-weight {
@@ -48,6 +46,7 @@
 }
 
 .example__illustration-description {
+  color: $color-arial;
   font-family: $font-ArialMT;
   font-size: 12px;
   line-height: 12px;
@@ -64,12 +63,11 @@
 .example__illustration-price {
   font-size: 14px;
   text-align: center;
-  color: #111111;
+  color: $color-oswald;
 }
 
 .example__slider-list {
-  list-style: none;
-  padding: 0;
+  @include reset-list;
 }
 
 .example__illustration-toggle {
@@ -84,4 +82,8 @@
   line-height: 20px;
   background-color: inherit;
   cursor: pointer;
+}
+
+.example__img-pro {
+  display: none;
 }
