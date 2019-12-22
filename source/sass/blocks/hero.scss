@@ -1,7 +1,7 @@
 .hero__wrapper-title {
   display: flex;
   flex-direction: column;
-  background-color: #5eaa2f;
+  background-color: $color-bg-green;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
@@ -72,7 +72,7 @@
   }
 
   .hero__title {
-    color: $color-oswald;
+    color: $color-black-font;
     font-size: 60px;
     line-height: 60px;
     padding-right: 60px;
@@ -84,7 +84,7 @@
   }
 
   .hero__subtitle {
-    color: $color-oswald;
+    color: $color-black-font;
     font-size: 20px;
     text-align: left;
     padding-bottom: 0;
@@ -108,14 +108,14 @@
     display: flex;
     padding: 0;
     padding-top: 120px;
-    background-color: #ffffff;
+    background-color: $color-white;
     width: 50%;
     z-index: 1;
   }
 
   .hero__wrapper--desktop {
     width: 50%;
-    background-color: #68b738;
+    background-color: $color-bg-green;
     padding-top: 120px;
   }
 

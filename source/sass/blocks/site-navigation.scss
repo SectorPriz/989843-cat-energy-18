@@ -7,11 +7,11 @@
 .site-navigation__link {
   font-weight: 500;
   font-size: 20px;
-  color: $color-oswald;
+  color: $color-black-font;
 }
 
 .site-navigation__item {
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid $color-grey-border;
   padding: 21px 0 22px;
 }
 
@@ -22,10 +22,62 @@
   }
 
   .site-navigation__link {
+    &:hover,
+    &:focus {
+      color: $black-font60;
+    }
+
+    &:active {
+      color: $black-font30;
+    }
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    color: $color-oswald;
-    padding-right: 30px;
+    color: $color-black-font;
+    margin-right: 30px;
+  }
+
+  .site-navigation__link--active {
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid $green-two60;
+    }
+
+    &:active {
+      border-bottom: 2px solid $green-two30;
+    }
+    border-bottom: 2px solid $color-green-two;
+  }
+
+  .site-navigation__item {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-navigation__link--desktop-index {
+    &:hover,
+    &:focus {
+      color: $white60;
+    }
+
+    &:active {
+      color: $white30;
+    }
+    font-size: 20px;
+    color: $color-white;
+    margin-right: 35px;
+  }
+
+  .site-navigation__link--desktop-index-active {
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid $white60;
+    }
+
+    &:active {
+      border-bottom: 2px solid $white30;
+    }
+    border-bottom: 2px solid $color-white;
   }
 }

@@ -1,9 +1,9 @@
 .product-catalog__title {
-  color: $color-oswald;
+  color: $color-black-font;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $color-grey-border;
   margin: 0;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .product-catalog__item {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $color-grey-border;
 }
 
 .product-catalog__item-wrapper {
@@ -33,7 +33,7 @@
   }
 
   .product-catalog__item-wrapper {
-    background-color: #f2f2f2;
+    background-color: $color-bg-light-grey;
     max-width: 324px;
   }
 

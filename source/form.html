@@ -9,24 +9,24 @@
 <body>
 <div class="site-container">
   <header class="page-header">
-    <div class="page-header__nav-header">
-      <a class="page-header__logo-link">
-        <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39"
-          alt="логотип Cat Energy">
-      </a>
-      <button class="page-header__toggle" type="button">X</button>
-    </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
+    <nav class="main-nav main-nav--opened">
+      <div class="main-nav__wrapper-head">
+        <a class="main-nav__logo-link" href="index.html">
+          <img class="main-nav__logo-img" src="img/logo-mobile.svg" width="191" height="39"
+            alt="логотип Cat Energy">
+        </a>
+        <a class="main-nav__toggle main-nav__toggle--opened">Меню</a>
+      </div>
+      <div class="main-nav__wrapper-list">
         <ul class="main-nav__list site-navigation">
-          <li class="site-navigation__item site-navigation__item--index">
+          <li class="site-navigation__item site-navigation__item--desktop-index">
             <a class="site-navigation__link" href="index.html">Главная</a>
           </li>
           <li class="site-navigation__item site-navigation__item--catalog">
             <a class="site-navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-navigation__item site-navigation__item--programs">
-            <a class="site-navigation__link">Подбор Программы</a>
+            <a class="site-navigation__link  site-navigation__link--active">Подбор Программы</a>
           </li>
         </ul>
       </div>

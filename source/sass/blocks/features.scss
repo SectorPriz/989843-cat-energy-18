@@ -4,7 +4,7 @@
 }
 
 .features__title {
-  color: $color-oswald;
+  color: $color-black-font;
   font-size: 36px;
   line-height: 60px;
   font-weight: 500;
@@ -20,7 +20,7 @@
     content: "";
     width: 60px;
     height: 60px;
-    background-color: #68b738;
+    background-color: $color-green-two;
     position: absolute;
     left: -80px;
     top: 0;
@@ -28,7 +28,7 @@
     background-position: center;
   }
   font-family: $font-ArialMT;
-  color: $color-arial;
+  color: $color-grey-font;
   font-size: 14px;
   line-height: 18px;
   position: relative;
@@ -99,7 +99,7 @@
       font-size: 295px;
       top: 94px;
       left: 100px;
-      color: #f2f2f2;
+      color: $color-bg-light-grey;
       width: 71px;
       height: 228px;
       z-index: 1;
@@ -114,7 +114,7 @@
       font-size: 295px;
       top: 94px;
       left: 100px;
-      color: #f2f2f2;
+      color: $color-bg-light-grey;
       width: 71px;
       height: 228px;
       z-index: 1;
@@ -129,7 +129,7 @@
       font-size: 295px;
       top: 94px;
       left: 100px;
-      color: #f2f2f2;
+      color: $color-bg-light-grey;
       width: 71px;
       height: 228px;
       z-index: 1;
@@ -144,7 +144,7 @@
       font-size: 295px;
       top: 94px;
       left: 100px;
-      color: #f2f2f2;
+      color: $color-bg-light-grey;
       width: 71px;
       height: 228px;
       z-index: 1;

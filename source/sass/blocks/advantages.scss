@@ -13,8 +13,7 @@
 }
 
 .advantages__wrapper-item {
-  background-color: #f2f2f2;
-
+  background-color: $color-bg-light-grey;
   padding: 30px 21px 14px 30px;
 }
 
@@ -29,11 +28,11 @@
 }
 
 .advantages__description {
-  color: $color-arial;
+  color: $color-grey-font;
   font-family: $font-ArialMT;
   font-size: 14px;
   line-height: 18px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $color-grey-border;
   padding-bottom: 20px;
 }
 
@@ -41,7 +40,7 @@
   &::before {
     width: 50px;
     height: 50px;
-    background-color: #5eaa2f;
+    background-color: $color-green-two;
     background-position: center;
     border-radius: 50px;
     top: 25px;
@@ -65,7 +64,7 @@
   &::before {
     width: 50px;
     height: 50px;
-    background-color: #5eaa2f;
+    background-color: $color-green-two;
     background-position: center;
     border-radius: 50px;
     top: 25px;
@@ -97,7 +96,7 @@
     right: -36px;
     position: absolute;
   }
-  color: $color-oswald;
+  color: $color-black-font;
   line-height: 16px;
   text-transform: uppercase;
   position: relative;
@@ -134,7 +133,7 @@
   }
 
   .advantages__wrapper-item {
-    background-color: #f2f2f2;
+    background-color: $color-bg-light-grey;
     padding: 0;
     padding-top: 80px;
     padding-left: 52px;
@@ -145,7 +144,7 @@
     &::before {
       width: 200px;
       height: 200px;
-      background-color: #5eaa2f;
+      background-color: $color-green-two;
       background-position: center;
       border-radius: 200px;
       top: 92px;
@@ -208,7 +207,7 @@
   }
 
   .advantages__wrapper-item {
-    background-color: #f2f2f2;
+    background-color: $color-bg-light-grey;
   }
 
   .advantages__item {
@@ -232,7 +231,7 @@
     &::before {
       width: 100px;
       height: 100px;
-      background-color: #5eaa2f;
+      background-color: $color-green-two;
       background-position: center;
       border-radius: 100px;
       top: 54px;

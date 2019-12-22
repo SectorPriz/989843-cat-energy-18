@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $color-grey-border;
 }
 
 .footer__social-item {
@@ -29,12 +29,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $color-grey-border;
   padding: 22px 0;
 }
 
 .footer__academy-name {
-  color: $color-arial;
+  color: $color-grey-font;
   font-family: $font-ArialMT;
   font-size: 16px;
   line-height: 16px;
@@ -42,11 +42,11 @@
 }
 
 .footer__social-img {
-  fill: $fill-footer-svg;
+  fill: $color-brownish-grey;
 }
 
 .footer__academy-img {
-  fill: $fill-footer-svg;
+  fill: $color-brownish-grey;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,7 +55,7 @@
   }
 
   .footer__social {
-    background-color: #f2f2f2;
+    background-color: $color-bg-light-grey;
   }
 }
 
@@ -66,9 +66,7 @@
     justify-content: space-between;
     padding: 60px 30px;
   }
-}
 
-@media (min-width: $tablet-width) {
   .footer__logo,
   .footer__social-item,
   .footer__academy,
