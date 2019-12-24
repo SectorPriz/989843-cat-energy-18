@@ -19,6 +19,8 @@
   .site-navigation {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin: 0 -15px;
   }
 
   .site-navigation__link {
@@ -34,7 +36,6 @@
     font-size: 18px;
     line-height: 25px;
     color: $color-black-font;
-    margin-right: 30px;
   }
 
   .site-navigation__link--active {
@@ -51,6 +52,7 @@
 
   .site-navigation__item {
     border: none;
+    padding: 21px 15px 22px 15px;
   }
 }
 
@@ -58,26 +60,25 @@
   .site-navigation__link--desktop-index {
     &:hover,
     &:focus {
-      color: $white60;
+      color: $temporary-hero-color;
     }
 
     &:active {
-      color: $white30;
+      color: $temporary-hero-color;
     }
     font-size: 20px;
-    color: $color-white;
-    margin-right: 35px;
+    color: $temporary-hero-color;
   }
 
   .site-navigation__link--desktop-index-active {
     &:hover,
     &:focus {
-      border-bottom: 2px solid $white60;
+      border-bottom: 2px solid $temporary-hero-color;
     }
 
     &:active {
-      border-bottom: 2px solid $white30;
+      border-bottom: 2px solid $temporary-hero-color;
     }
-    border-bottom: 2px solid $color-white;
+    border-bottom: 2px solid $temporary-hero-color;
   }
 }

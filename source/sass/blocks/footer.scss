@@ -4,6 +4,14 @@
 }
 
 .footer__logo {
+  &:hover .footer__logo-img,
+  &:focus .footer__logo-img {
+    opacity: 0.8;
+  }
+
+  &:active .footer__logo-img {
+    opacity: 0.6;
+  }
   display: flex;
   justify-content: center;
   padding: 40px 0 30px 0;
@@ -26,9 +34,6 @@
 }
 
 .footer__academy {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-top: 1px solid $color-grey-border;
   padding: 22px 0;
 }
@@ -42,27 +47,33 @@
 }
 
 .footer__social-img {
-  &:hover,
-  &:focus {
-    fill: $color-green-two;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
   fill: $color-brownish-grey;
 }
 
-.footer__academy-img {
-  &:hover,
-  &:focus {
+.footer__social-link {
+  &:hover .footer__social-img,
+  &:focus .footer__social-img {
     fill: $color-green-two;
   }
 
-  &:active {
+  &:active .footer__social-img {
     opacity: 0.3;
   }
-  fill: $color-brownish-grey;
+}
+
+.footer__academy-link {
+  &:hover .footer__academy-img,
+  &:focus .footer__academy-img {
+    fill: $color-green-two;
+  }
+
+  &:active .footer__academy-img,
+  &:active .footer__academy-name {
+    opacity: 0.3;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -72,6 +83,21 @@
 
   .footer__social {
     background-color: $color-bg-light-grey;
+  }
+
+  .footer__social-img--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .footer__social-img--inst {
+    width: 23px;
+    height: 23px;
+  }
+
+  .footer__social-img--fb {
+    width: 14px;
+    height: 28px;
   }
 }
 
