@@ -96,6 +96,20 @@
     right: -36px;
     position: absolute;
   }
+
+  &:hover::before,
+  &:focus::before {
+    content: "";
+    width: 34px;
+    background: url("../img/icon-right-arrow-verylong.svg");
+    top: 9px;
+    right: -59px;
+    position: absolute;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
   color: $color-black-font;
   line-height: 16px;
   text-transform: uppercase;

@@ -42,10 +42,26 @@
 }
 
 .footer__social-img {
+  &:hover,
+  &:focus {
+    fill: $color-green-two;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
   fill: $color-brownish-grey;
 }
 
 .footer__academy-img {
+  &:hover,
+  &:focus {
+    fill: $color-green-two;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
   fill: $color-brownish-grey;
 }
 
