@@ -1,5 +1,13 @@
 .button {
-  color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: $color-bg-green;
+  }
+
+  &:active {
+    color: $white30;
+  }
+  color: $color-white;
   background-color: $color-green-two;
   text-transform: uppercase;
 }

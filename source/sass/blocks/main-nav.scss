@@ -1,4 +1,5 @@
 .main-nav__wrapper-head {
+  border-bottom: 1px solid $color-grey-border;
   padding: 15px 0 10px 20px;
 }
 
@@ -93,6 +94,7 @@
 
   .main-nav__wrapper-head {
     padding: 0;
+    border-bottom: none;
   }
 
   .main-nav__logo-img {

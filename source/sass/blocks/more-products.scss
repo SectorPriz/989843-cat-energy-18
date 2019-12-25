@@ -7,37 +7,61 @@
 
 .more-products__plus {
   cursor: pointer;
+  padding: 25px 0 25px;
+}
+
+.more-products__plus--nomobil {
+  display: none;
 }
 
 .more-products__button-link {
+  &:hover,
+  &:focus {
+    background-color: $color-grey-focus;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
   background-color: $color-bg-light-grey;
   padding: 10px 0;
   min-width: 280px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .more-products__title {
   font-size: 16px;
   font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 8px;
 }
 
 .more-products__description {
   font-family: $font-ArialMT;
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .more-products {
-    padding-top: 70px;
     background-color: white;
     border: 1px solid #d9d9d9;
     max-width: 324px;
   }
 
   .more-products__plus {
-    padding-bottom: 65px;
+    display: none;
+  }
+
+  .more-products__plus--nomobil {
+    display: block;
+    padding-top: 55px;
+    padding-bottom: 50px;
   }
 
   .more-products__title {
@@ -54,12 +78,12 @@
     color: $color-grey-font;
     text-align: center;
     font-size: 16px;
-    padding-bottom: 35px;
+    padding-bottom: 84px;
     max-width: 180px;
   }
 
   .more-products__button-link {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     color: $color-black-font;
   }
 }
@@ -72,5 +96,9 @@
   .more-products__button-link {
     width: 165px;
     min-width: inherit;
+  }
+
+  .more-products__description {
+    padding-bottom: 90px;
   }
 }

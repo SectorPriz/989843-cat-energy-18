@@ -5,6 +5,7 @@
   font-weight: 400;
   border-bottom: 1px solid $color-grey-border;
   margin: 0;
+  padding: 30px 20px 35px;
 }
 
 .product-catalog__list {
@@ -35,6 +36,8 @@
   .product-catalog__item-wrapper {
     background-color: $color-bg-light-grey;
     max-width: 324px;
+    padding-top: 125px;
+    padding-bottom: 0;
   }
 
   .product-catalog__list {
@@ -61,5 +64,9 @@
 
   .product-catalog__item-wrapper {
     max-width: 245px;
+  }
+
+  .product-catalog__title {
+    padding-top: 150px;
   }
 }

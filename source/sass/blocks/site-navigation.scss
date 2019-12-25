@@ -11,7 +11,7 @@
 }
 
 .site-navigation__item {
-  border-top: 1px solid $color-grey-border;
+  border-bottom: 1px solid $color-grey-border;
   padding: 21px 0 22px;
 }
 
@@ -57,6 +57,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-navigation__link {
+    font-size: 20px;
+  }
+
   .site-navigation__link--desktop-index {
     &:hover,
     &:focus {
