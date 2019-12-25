@@ -27,14 +27,30 @@ a {
 }
 
 $mobil-width: 320px;
+$mobil-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $font-ArialMT: "ArialMT", "Arial", sans-serif;
-$color-white: #ffffff;
 $padding-item: 0 20px;
-$color-oswald: #111111;
-$color-arial: #444444;
-$fill-footer-svg: #666666;
+$color-bg-green: #5eaa2f;
+$color-green-two: rgb(104, 183, 56);
+$green-two60: rgba(104, 183, 56, 0.6);
+$green-two30: rgba(104, 183, 56, 0.3);
+$color-black: #111111;
+$color-black-font: rgb(17, 17, 17);
+$black-font60: rgba(17, 17, 17, 0.6);
+$black-font30: rgba(17, 17, 17, 0.3);
+$color-black-two: #222222;
+$color-grey-font: #444444;
+$color-brownish-grey: #666666;
+$color-pinkish-grey: #cdcdcd;
+$color-bg-light-grey: #f2f2f2;
+$color-grey-border: #ececec;
+$color-grey-focus: #ebebeb;
+$color-white: rgb(255, 255, 255);
+$white60: rgba(255, 255, 255, 0.6);
+$white30: rgba(255, 255, 255, 0.3);
+$temporary-hero-color: #ffa530;
 
 @import "fonts";
 @import "mixins";
@@ -52,7 +68,6 @@ $fill-footer-svg: #666666;
 @import "blocks/hero";
 @import "blocks/main-catalog";
 @import "blocks/more-products";
-@import "blocks/page-header";
 @import "blocks/product";
 @import "blocks/product-catalog";
 @import "blocks/program-form";

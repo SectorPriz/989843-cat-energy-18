@@ -1,22 +1,17 @@
 .hero__wrapper-title {
   display: flex;
   flex-direction: column;
-  background-color: #5eaa2f;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
+  position: relative;
 }
 
 .hero__wrapper-img {
+  padding-bottom: 60px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -135px;
-  padding-bottom: 20px;
+  justify-content: center;
 }
 
 .hero__title {
-  color: $color-white;
+  color: $temporary-hero-color;
   text-align: center;
   font-size: 36px;
   line-height: 36px;
@@ -26,42 +21,48 @@
 }
 
 .hero__subtitle {
-  color: $color-white;
+  color: $temporary-hero-color;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 157px;
   margin: 0;
   padding-top: 24px;
+  padding-bottom: 30px;
 }
 
 .hero__button {
   color: $color-white;
   text-align: center;
+  padding: 13px 0;
+  position: absolute;
   width: 100%;
   font-size: 14px;
   line-height: 14px;
-  padding: 13px 0;
+  /*Пока только так, птому что когда позиционирую относительно контейнера, почему-то правая сторона прилипает к краю экрана (нет отступа в 20px)*/
+  bottom: -306px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero__img--desktop {
+  display: none;
+}
+
+.hero__img--tablet {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .hero {
-    background: none;
-  }
-
-  .hero__wrapper {
-    padding-left: 86px;
-  }
-
-  .hero__wrapper--desktop {
-    padding-left: 86px;
+    padding-top: 60px;
   }
 
   .hero__wrapper-title {
     background: none;
     align-items: flex-start;
-    padding-bottom: 20px;
+    padding-left: 82px;
+    z-index: 2;
   }
 
   .hero__wrapper-img {
@@ -69,25 +70,22 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 0;
+    padding-bottom: 0;
   }
 
   .hero__title {
-    color: $color-oswald;
+    color: $color-black-font;
     font-size: 60px;
     line-height: 60px;
-    padding-right: 60px;
+    padding: 0 0 30px 0;
     text-align: left;
-  }
-
-  .hero__img {
-    order: 2;
   }
 
   .hero__subtitle {
-    color: $color-oswald;
+    color: $color-black-font;
     font-size: 20px;
     text-align: left;
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 
   .hero__button {
@@ -96,27 +94,35 @@
     line-height: 20px;
     font-weight: 400;
     padding: 16px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .hero__img--tablet {
+    display: inherit;
+    margin-top: -80px;
+    z-index: 1;
+  }
+
+  .hero__img--desktop {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero {
     display: flex;
+    padding-top: 200px;
   }
 
   .hero__wrapper {
     display: flex;
-    padding: 0;
-    padding-top: 120px;
-    background-color: #ffffff;
-    width: 50%;
-    z-index: 1;
-  }
-
-  .hero__wrapper--desktop {
-    width: 50%;
-    background-color: #68b738;
-    padding-top: 120px;
   }
 
   .hero__wrapper-img {
@@ -125,5 +131,24 @@
 
   .hero__title {
     padding: 0;
+  }
+
+  .hero__subtitle {
+    padding: 35px 0 53px;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .hero__img--tablet {
+    display: none;
+  }
+
+  .hero__img--desktop {
+    display: inherit;
+    position: relative;
+    left: -13px;
+    top: -23px;
   }
 }

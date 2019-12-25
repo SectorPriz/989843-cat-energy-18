@@ -13,8 +13,7 @@
 }
 
 .advantages__wrapper-item {
-  background-color: #f2f2f2;
-
+  background-color: $color-bg-light-grey;
   padding: 30px 21px 14px 30px;
 }
 
@@ -29,11 +28,11 @@
 }
 
 .advantages__description {
-  color: $color-arial;
+  color: $color-grey-font;
   font-family: $font-ArialMT;
   font-size: 14px;
   line-height: 18px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $color-grey-border;
   padding-bottom: 20px;
 }
 
@@ -41,9 +40,9 @@
   &::before {
     width: 50px;
     height: 50px;
-    background-color: #5eaa2f;
+    background-color: $color-green-two;
     background-position: center;
-    border-radius: 50px;
+    border-radius: 50%;
     top: 25px;
     left: 30px;
   }
@@ -65,9 +64,9 @@
   &::before {
     width: 50px;
     height: 50px;
-    background-color: #5eaa2f;
+    background-color: $color-green-two;
     background-position: center;
-    border-radius: 50px;
+    border-radius: 50%;
     top: 25px;
     left: 30px;
   }
@@ -97,7 +96,21 @@
     right: -36px;
     position: absolute;
   }
-  color: $color-oswald;
+
+  &:hover::before,
+  &:focus::before {
+    content: "";
+    width: 34px;
+    background: url("../img/icon-right-arrow-verylong.svg");
+    top: 9px;
+    right: -59px;
+    position: absolute;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+  color: $color-black-font;
   line-height: 16px;
   text-transform: uppercase;
   position: relative;
@@ -134,7 +147,7 @@
   }
 
   .advantages__wrapper-item {
-    background-color: #f2f2f2;
+    background-color: $color-bg-light-grey;
     padding: 0;
     padding-top: 80px;
     padding-left: 52px;
@@ -145,9 +158,8 @@
     &::before {
       width: 200px;
       height: 200px;
-      background-color: #5eaa2f;
+      background-color: $color-green-two;
       background-position: center;
-      border-radius: 200px;
       top: 92px;
       left: auto;
       right: 62px;
@@ -169,7 +181,6 @@
     &::before {
       width: 200px;
       height: 200px;
-      border-radius: 200px;
       top: 92px;
       left: auto;
       right: 62px;
@@ -208,7 +219,7 @@
   }
 
   .advantages__wrapper-item {
-    background-color: #f2f2f2;
+    background-color: $color-bg-light-grey;
   }
 
   .advantages__item {
@@ -232,9 +243,8 @@
     &::before {
       width: 100px;
       height: 100px;
-      background-color: #5eaa2f;
+      background-color: $color-green-two;
       background-position: center;
-      border-radius: 100px;
       top: 54px;
       left: 92px;
       //right: auto;
@@ -256,7 +266,6 @@
     &::before {
       width: 100px;
       height: 100px;
-      border-radius: 100px;
       top: 54px;
       left: 92px;
       //right: auto;

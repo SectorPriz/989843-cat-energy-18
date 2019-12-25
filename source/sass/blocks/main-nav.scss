@@ -1,5 +1,131 @@
-/*.main-nav {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}*/
+.main-nav__wrapper-head {
+  border-bottom: 1px solid $color-grey-border;
+  padding: 15px 0 10px 20px;
+}
+
+.main-nav__list {
+  position: relative;
+}
+
+.main-nav__toggle {
+  font-size: 0;
+}
+
+.main-nav__logo-img {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: $mobil-width-only) {
+  .main-nav--closed .main-nav__toggle {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background-color: $color-black-two;
+      top: 26px;
+      right: 19px;
+      box-shadow: 0 8px 0 0 $color-black-two, 0 16px 0 0 $color-black-two;
+    }
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background-color: $color-black-two;
+      top: 33px;
+      right: 19px;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper-head {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .main-nav__logo-img--tablet {
+    display: none;
+  }
+
+  .main-nav__logo-img--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+  }
+
+  .main-nav__wrapper-head {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .main-nav__logo-img {
+    display: none;
+  }
+
+  .main-nav__logo-img--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1220px;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .main-nav__logo-img--tablet {
+    display: none;
+  }
+
+  .main-nav__logo-img {
+    display: none;
+  }
+
+  .main-nav__logo-img--desktop {
+    display: inherit;
+  }
+}

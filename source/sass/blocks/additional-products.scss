@@ -1,5 +1,5 @@
 .additional-products__title {
-  color: $color-oswald;
+  color: $color-black-font;
   font-size: 24px;
   line-height: 24px;
 }
@@ -14,6 +14,6 @@
 .additional-products__item {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $color-grey-border;
   padding-bottom: 20px;
 }

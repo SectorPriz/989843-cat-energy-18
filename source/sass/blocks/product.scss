@@ -6,7 +6,7 @@
 
 .product__title {
   margin: 0;
-  color: #111111;
+  color: $color-black;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -17,7 +17,7 @@
 .product__description {
   display: flex;
   flex-direction: column;
-  color: #444444;
+  color: $color-grey-font;
   font-family: $font-ArialMT;
   font-size: 12px;
   line-height: 16px;
@@ -45,43 +45,67 @@
 .product__button {
   text-align: center;
   padding: 10px 0;
+  margin: 0 20px;
+}
+
+.product__img--tablet {
+  display: none;
+}
+
+.product__img--desktop {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .product {
     flex-direction: column;
-    background-color: #f2f2f2;
-    padding: 0 40px;
+    background-color: $color-bg-light-grey;
+    padding: 0 38px 0 37px;
   }
 
   .product__img-link {
-    background-color: #f2f2f2;
+    background-color: $color-bg-light-grey;
     text-align: center;
+    position: relative;
+    width: 324px;
   }
 
   .product__img {
     display: none;
   }
 
+  .product__img--tablet {
+    display: inherit;
+    position: absolute;
+    width: 324px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .product__img--desktop {
+    display: none;
+  }
+
   .product__title {
-    color: $color-oswald;
+    color: $color-black-font;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
-    padding: 40px 40px 30px 40px;
+    padding: 39px 45px 20px 45px;
   }
 
   .product__button {
-    margin: 30px 40px 40px 40px;
+    margin: 30px 38px 40px 37px;
   }
 
   .product__description-wrapper {
     font-size: 16px;
     line-height: 16px;
-    color: $font-ArialMT;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #cdcdcd;
+    color: $color-grey-font;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $color-grey-border;
   }
 }
 
@@ -90,11 +114,23 @@
     display: none;
   }
 
+  .product__img--tablet {
+    display: none;
+  }
+
+  .product__img--desktop {
+    display: inherit;
+    position: absolute;
+    width: 245px;
+    bottom: 0;
+    left: 40px;
+  }
+
   .product-catalog__list {
     display: flex;
   }
 
   .product__title {
-    padding: 40px 0 30px 0;
+    padding: 38px 5px 28px 5px;
   }
 }

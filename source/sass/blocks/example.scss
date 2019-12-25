@@ -3,14 +3,14 @@
 }
 
 .example__title {
-  color: $color-oswald;
+  color: $color-black-font;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
 }
 
 .example__description {
-  color: $color-arial;
+  color: $color-grey-font;
   font-family: $font-ArialMT;
   font-size: 14px;
   line-height: 18px;
@@ -32,7 +32,7 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-pinkish-grey;
   border-radius: 3px;
   margin: 0;
 }
@@ -46,13 +46,13 @@
 }
 
 .example__illustration-description {
-  color: $color-arial;
+  color: $color-grey-font;
   font-family: $font-ArialMT;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   padding: 5px 10px;
-  background-color: #f2f2f2;
+  background-color: $color-bg-light-grey;
   /*временно*/
   width: 90px;
   margin: 0 17px;
@@ -63,7 +63,7 @@
 .example__illustration-price {
   font-size: 14px;
   text-align: center;
-  color: $color-oswald;
+  color: $color-black-font;
 }
 
 .example__slider-list {
