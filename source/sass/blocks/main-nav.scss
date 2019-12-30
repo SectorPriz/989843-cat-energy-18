@@ -70,14 +70,6 @@
     justify-content: center;
     padding-left: 0;
   }
-
-  .main-nav__logo-img--tablet {
-    display: none;
-  }
-
-  .main-nav__logo-img--desktop {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -98,11 +90,7 @@
   }
 
   .main-nav__logo-img {
-    display: none;
-  }
-
-  .main-nav__logo-img--desktop {
-    display: none;
+    width: 174px;
   }
 }
 
@@ -122,10 +110,6 @@
   }
 
   .main-nav__logo-img {
-    display: none;
-  }
-
-  .main-nav__logo-img--desktop {
-    display: inherit;
+    width: 203px;
   }
 }

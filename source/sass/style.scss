@@ -51,6 +51,7 @@ $color-white: rgb(255, 255, 255);
 $white60: rgba(255, 255, 255, 0.6);
 $white30: rgba(255, 255, 255, 0.3);
 $temporary-hero-color: #ffa530;
+$retina-dppx: 1.5dppx;
 
 @import "fonts";
 @import "mixins";
