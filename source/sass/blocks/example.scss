@@ -19,13 +19,16 @@
 .example__illustration-list {
   @include reset-list;
   display: flex;
-  justify-content: space-between;
+  margin: 0 -15px;
+  position: relative;
+  padding-bottom: 40px;
 }
 
 .example__illustration-item {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding: 0 15px;
 }
 
 .example__illustration-value {
@@ -38,11 +41,11 @@
 }
 
 .example__illustration-value--border-weight {
-  padding: 17px 0;
+  padding: 17px 44px;
 }
 
 .example__illustration-value--border-day {
-  padding: 17px 0;
+  padding: 17px 24px;
 }
 
 .example__illustration-description {
@@ -51,19 +54,25 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  padding: 5px 10px;
   background-color: $color-bg-light-grey;
-  /*временно*/
-  width: 90px;
-  margin: 0 17px;
-  position: relative;
-  top: -15px;
+  position: absolute;
+  border-bottom: 0;
+  left: 4px;
+  bottom: -13px;
+  padding: 0 3px;
+  margin: 0 25px;
+}
+
+.example__illustration-description--weight {
+  margin: 0 31px;
 }
 
 .example__illustration-price {
+  display: flex;
   font-size: 14px;
-  text-align: center;
+  padding-left: 50px;
   color: $color-black-font;
+  text-transform: uppercase;
 }
 
 .example__slider-list {
@@ -86,4 +95,71 @@
 
 .example__img-pro {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .example__value-wrapper {
+    display: flex;
+  }
+
+  .example__illustration-list {
+    margin: 0 -20px;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .example__illustration-item {
+    padding: 0 20px;
+  }
+
+  .example__illustration-price {
+    flex-direction: column;
+    text-align: right;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__illustration-value {
+    font-size: 30px;
+  }
+
+  .example__illustration-description {
+    font-size: 14px;
+    padding: 0 5px;
+    margin: 0 30px;
+    bottom: -4px;
+  }
+
+  .example__illustration-description--weight {
+    margin: 0 45px;
+  }
+
+  .example__illustration-value--border-weight {
+    padding: 23px 59px;
+  }
+
+  .example__illustration-value--border-day {
+    padding: 23px 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    display: flex;
+  }
+
+  .example__value-wrapper {
+    flex-direction: column;
+  }
+
+  .example__advantages-wrapper {
+    width: 50%;
+  }
+
+  .example__illustration-price {
+    text-align: left;
+  }
 }
