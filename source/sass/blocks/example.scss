@@ -127,10 +127,6 @@
     padding: 0 20px;
   }
 
-  .example__illustration-description {
-    background-color: $color-white;
-  }
-
   .example__illustration-price {
     flex-direction: column;
     text-align: right;
@@ -150,6 +146,7 @@
     padding: 0 5px;
     margin: 0 30px;
     bottom: -4px;
+    background-color: $color-white;
   }
 
   .example__illustration-description--weight {
