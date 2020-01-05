@@ -1,7 +1,28 @@
 .additional-products__title {
   color: $color-black-font;
+  background-color: $color-white;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  letter-spacing: -0.9px;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 25px;
+  font-weight: 500;
+  z-index: 2;
+  position: relative;
+  max-width: 267px;
+}
+
+.additional-products__title-wrapper {
+  &::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: #5eaa2f;
+    bottom: 8px;
+  }
+  position: relative;
 }
 
 .additional-products__list {

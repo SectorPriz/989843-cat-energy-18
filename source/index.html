@@ -17,9 +17,7 @@
           <img class="main-nav__logo-img" src="img/logo-mobile.svg" width="191" height="39"
             alt="Питание для котов Cat Energy">
         </picture>
-        <a class="main-nav__logo-link">
-        </a>
-        <a class="main-nav__toggle main-nav__toggle--opened">Меню</a>
+        <a class="main-nav__logo-link"> </a> <a class="main-nav__toggle main-nav__toggle--opened">Меню</a>
       </div>
       <ul class="main-nav__list site-navigation">
         <li class="site-navigation__item">
@@ -67,8 +65,7 @@
           <div class="advantages__wrapper-item">
             <h3 class="advantages__title">Похудение</h3>
             <p class="advantages__description">Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям?
-              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="advantages__link" href="#">Каталог slim</a>
           </div>
         </li>
@@ -76,8 +73,7 @@
           <div class="advantages__wrapper-item">
             <h3 class="advantages__title">Набор массы</h3>
             <p class="advantages__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
-              Pro
-              поможет вашему коту нарастить необходимые мышцы!</p>
+              Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="advantages__link" href="#">Каталог pro</a>
           </div>
         </li>
@@ -105,14 +101,12 @@
   </div>
   <section class="example">
     <div class="container">
-      <h2 class="example__title">Живой пример</h2>
       <div class="example__wrapper">
         <div class="example__advantages-wrapper">
+          <h2 class="example__title">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-            Slim.
-            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-            часов
-            в день. </p>
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+            по 16 часов в день. </p>
           <div class="example__value-wrapper">
             <ul class="example__illustration-list">
               <li class="example__illustration-item">
@@ -124,27 +118,38 @@
                 <p class="example__illustration-description">затрачено времени</p>
               </li>
             </ul>
-            <p class="example__illustration-price">Затраты на питание: <span>15 000 руб.</span></p>
+            <p class="example__illustration-price">Затраты на питание: <span class="example__illustration-price--value">15 000 руб.</span>
+            </p>
           </div>
         </div>
-        <div class="example__illustration-slider example__slider">
-          <ul class="example__slider-list">
-            <li class="example__slider-item">
-              <img class="example__img-slim" src="img/before-mobile@1x.png" width="320" height="240"
-                alt="Ваша кошка До замены обычного корма, на корм Cat Energy Slim">
-            </li>
-            <li class="example__slider-item">
-              <img class="example__img-pro" src="img/after-mobile@1x.png" width="320" height="240"
-                alt="Ваша кошка После замены обычного корма, на корм Cat Energy Slim">
-            </li>
-          </ul>
-        </div>
-        <div class="example__illustration-toggle">
-          <button class="example__illustration-button" type="button">Было</button>
-          <div class="example__illustration-scale">
-            <div class="example__illustration-bar example__illustration-bar--after"></div>
+        <div class="example__slider-wrapper">
+          <div class="example__illustration-slider example__slider">
+            <ul class="example__slider-list">
+              <li class="example__slider-item example__slider-item--img">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                    srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="example__img-slim" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
+                    alt="Ваша кошка До замены обычного корма, на корм Cat Energy Slim">
+                </picture>
+              <li class="example__slider-item">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="example__img-pro" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
+                    alt="Ваша кошка После замены обычного корма, на корм Cat Energy Slim">
+                </picture>
+              </li>
+            </ul>
           </div>
-          <button class="example__illustration-button" type="button">Стало</button>
+          <div class="example__illustration-toggle">
+            <button class="example__illustration-button" type="button">Было</button>
+            <div class="example__illustration-scale">
+              <div class="example__illustration-bar example__illustration-bar--after"></div>
+            </div>
+            <button class="example__illustration-button" type="button">Стало</button>
+          </div>
         </div>
       </div>
     </div>
@@ -155,18 +160,23 @@
     <div class="container">
       <div class="collaboration__wrapper">
         <h2 class="collaboration__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="collaboration__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="collaboration__address">ул. Большая Конюшенная, д. 19/8 <span class="collaboration__address--city">Санкт-Петербург</span></p>
       </div>
     </div>
-    <img class="collaboration__map-img" src="img/bg-map-mobile@1x.png" width="320" height="400"
-      alt="Офис Cat Energy на карте по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+    <div class="collaboration__map">
+      <picture class="collaboration__map-container">
+        <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+        <img class="collaboration__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+          alt="Офис Cat Energy на карте по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </picture>
+    </div>
   </section>
   <div class="footer__social">
     <div class="container">
       <div class="footer__social-wrapper">
-        <a class="footer__logo">
-          <img class="footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="логотип Cat Energy">
-        </a>
+        <a class="footer__logo"> <img class="footer__logo-img" src="img/logo-footer.svg" width="128" height="24"
+          alt="логотип Cat Energy"> </a>
         <ul class="footer__social-list">
           <li class="footer__social-item"><a class="footer__social-link footer__social-link--vk" href="#">Вконтакте
             <svg class="footer__social-img footer__social-img--vk" width="22" height="12" viewBox="0 0 22 12">

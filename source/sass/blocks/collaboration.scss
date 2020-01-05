@@ -18,3 +18,60 @@
   font-size: 14px;
   line-height: 20px;
 }
+
+.collaboration__map {
+  position: relative;
+}
+
+.collaboration__map-img {
+  position: relative;
+  width: 320px;
+  height: auto;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .collaboration__map-img {
+    width: 768px;
+  }
+
+  .collaboration__address {
+    font-size: 16px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .collaboration__map-img {
+    width: 1440px;
+  }
+
+  .collaboration__map {
+    z-index: 1;
+  }
+
+  .collaboration__wrapper {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    top: 95px;
+    left: 110px;
+    background-color: $color-white;
+    z-index: 2;
+    padding: 75px 60px 90px;
+  }
+
+  .collaboration__title {
+    font-size: 20px;
+    line-height: 25px;
+    padding-right: 70px;
+  }
+
+  .collaboration__address--city {
+    padding-top: 15px;
+  }
+}
