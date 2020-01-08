@@ -17,6 +17,7 @@
   line-height: 20px;
   font-weight: 400;
   margin: 0;
+  margin-right: auto;
 }
 
 .collaboration__address {
@@ -25,6 +26,7 @@
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+  width: 50%;
 }
 
 .collaboration__map {
@@ -41,8 +43,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .collaboration {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
   .collaboration__map-img {
     width: 768px;
+  }
+
+  .collaboration__title {
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 154px;
+    margin-left: 40px;
   }
 
   .collaboration__address {
@@ -50,10 +64,26 @@
     text-align: right;
     display: flex;
     flex-direction: column;
+    max-width: 160px;
+    margin-right: 40px;
+  }
+
+  .collaboration__address--city {
+    padding-top: 10px;
+  }
+
+  .collaboration__wrapper {
+    padding: 65px 30px 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .collaboration {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+  }
+
   .collaboration__map-img {
     width: 1440px;
   }
@@ -76,7 +106,11 @@
   .collaboration__title {
     font-size: 20px;
     line-height: 25px;
-    padding-right: 70px;
+    margin: 0;
+  }
+
+  .collaboration__address {
+    margin: 0;
   }
 
   .collaboration__address--city {
