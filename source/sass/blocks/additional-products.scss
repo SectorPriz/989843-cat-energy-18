@@ -1,3 +1,7 @@
+.additional-products {
+  margin-bottom: 35px;
+}
+
 .additional-products__title {
   color: $color-black-font;
   background-color: $color-white;
@@ -37,4 +41,56 @@
   flex-direction: column;
   border-bottom: 1px solid $color-grey-border;
   padding-bottom: 20px;
+}
+
+.additional-products__gift-title {
+  &::after {
+    content: "";
+    width: 56px;
+    height: 61px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  color: $color-white;
+  padding: 185px 60px 44px;
+  text-align: center;
+  margin: 0;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.additional-products__gift {
+  background-color: #5eaa2f;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-products__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 30px;
+    padding-left: 37px;
+    padding-right: 37px;
+    max-width: 419px;
+  }
+
+  .additional-products__item {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .additional-products__list {
+    border: 1px solid $color-pinkish-grey;
+    border-bottom: none;
+  }
+
+  .additional-products__gift-title {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
 }

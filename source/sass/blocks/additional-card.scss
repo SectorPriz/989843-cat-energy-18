@@ -1,7 +1,6 @@
 .additional-card {
   display: flex;
   flex-direction: column;
-  padding: $padding-item;
 }
 
 .additional-card__description {
@@ -15,11 +14,46 @@
 
 .additional-card__title {
   line-height: 16px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .additional-card__button {
-  padding: 10px 0;
+  padding: 10px 0 9px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-card__value-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .additional-card__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-card__title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+
+  .additional-card__value {
+    margin-right: 50px;
+  }
+
+  .additional-card__value--water {
+    margin-right: 60px;
+  }
+
+  .additional-card {
+    border-bottom: 1px solid $color-pinkish-grey;
+    padding: 24px 37px;
+  }
 }
