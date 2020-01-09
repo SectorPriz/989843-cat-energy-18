@@ -57,3 +57,35 @@
     padding: 24px 37px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additional-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  .additional-card__value-wrapper {
+    align-items: center;
+  }
+
+  .additional-card__button {
+    width: 254px;
+    height: 40px;
+  }
+
+  .additional-card__title {
+    padding-bottom: 0;
+  }
+
+  .additional-card__value {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .additional-card__price {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
