@@ -8,6 +8,11 @@
   background-position: top;
 }
 
+.hero-base {
+  //Временное решение
+  background-image: linear-gradient(to bottom, $color-bg-green 25%, $color-bg-green 25%, $color-bg-green 61%, transparent 61%);
+}
+
 .hero__wrapper-title {
   display: flex;
   flex-direction: column;
@@ -21,7 +26,7 @@
 }
 
 .hero__title {
-  color: $temporary-hero-color;
+  color: $color-white;
   text-align: center;
   font-size: 36px;
   line-height: 36px;
@@ -31,7 +36,7 @@
 }
 
 .hero__subtitle {
-  color: $temporary-hero-color;
+  color: $color-white;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
@@ -59,6 +64,10 @@
   .hero {
     background: none;
     padding-top: 60px;
+  }
+
+  .hero-base {
+    background: none;
   }
 
   .hero__wrapper-title {
@@ -121,6 +130,10 @@
     background-position: right top;
     display: flex;
     padding-top: 200px;
+  }
+
+  .hero-base {
+    background-image: linear-gradient(to right, transparent 50%, $color-bg-green 50%);
   }
 
   .hero__wrapper {

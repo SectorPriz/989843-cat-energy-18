@@ -104,6 +104,7 @@
 @media (min-width: $tablet-width) {
   .example {
     background: none;
+    background-image: linear-gradient(to top, $color-bg-light-grey 51%, transparent 51%);
   }
 
   .example__title {
@@ -167,6 +168,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    background-image: linear-gradient(to top, $color-bg-light-grey 72%, transparent 72%);
+  }
+
   .example__wrapper {
     display: flex;
     align-items: flex-end;
@@ -199,7 +204,7 @@
   .example__illustration-description {
     padding: 0 8px;
     margin: 0 28px;
-    background-color: $color-white;
+    background-color: $color-bg-light-grey;
   }
 
   .example__illustration-description--weight {
