@@ -2,4 +2,321 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.program-form__list {
+  @include reset-list;
+}
+
+.program-form__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.program-form__name {
+  @include reset-fieldset;
+  border-bottom: 1px solid $color-grey-border;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.program-form__label {
+  text-transform: uppercase;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.program-form__label-nickname {
+  min-width: 36px;
+}
+
+.program-form__label-weight {
+  min-width: 63px;
+}
+
+.program-form__label-age {
+  min-width: 97px;
+}
+
+.program-form__input {
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid $color-pinkish-grey;
+  }
+
+  /*нужно ли фокус сюда подлючать?*/
+  &:active {
+    border: 2px solid $color-grey-font;
+    outline: none;
+    cursor: text;
+  }
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-black;
+  text-transform: uppercase;
+  height: 45px;
+  border: 1px solid $color-pinkish-grey50;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.program-form__input--error {
+  border: 2px solid $color-input-error;
+}
+
+.program-form__list-radio {
+  @include reset-list;
+}
+
+.program-form__item-radio {
+  padding-bottom: 26px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.program-form__input-radio {
+  @include hidden;
+}
+
+.program-form__label-radio {
+  .program-form__input-radio + &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: $color-white;
+    border: 1px solid $color-pinkish-grey;
+    border-radius: 50%;
+    position: absolute;
+    top: -6px;
+    left: 0;
+  }
+
+  .program-form__input-radio:active + &::before {
+    border: 1px solid $color-radio-border;
+    opacity: 0.3;
+  }
+
+  .program-form__input-radio:hover + &::before,
+  .program-form__input-radio:focus + &::before {
+    border: 1px solid $color-radio-border;
+  }
+
+  .program-form__input-radio:active + & {
+    color: rgba(34, 34, 34, 0.3);
+  }
+
+  .program-form__input-radio:checked + &::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: $color-green-two;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 9px;
+  }
+
+  .program-form__input-radio:active + &::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: $color-green-two;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 9px;
+    opacity: 0.3;
+  }
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 46px;
+  cursor: pointer;
+}
+
+.program-form__task {
+  @include reset-fieldset;
+  border-bottom: 1px solid $color-grey-border;
+  padding-top: 30px;
+}
+
+.program-form__contacts {
+  @include reset-fieldset;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.program-form__contacts-list {
+  @include reset-list;
+}
+
+.program-form__contacts-title {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 0;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  max-width: 201px;
+}
+
+.program-form__contacts-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.program-form__contacts-label {
+  text-transform: uppercase;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.program-form__contacts-label--phone {
+  min-width: 50px;
+}
+
+.program-form__contacts-input {
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid $color-pinkish-grey50;
+  }
+
+  &:active {
+    border: 2px solid $color-black-font;
+    outline: none;
+    cursor: text;
+  }
+  height: 45px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $color-black;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid $color-pinkish-grey;
+  width: 100%;
+  padding-left: 15px;
+  z-index: 1;
+}
+
+.program-form__contacts-icon {
+  .program-form__contacts-input:hover + & {
+    cursor: pointer;
+  }
+
+  .program-form__contacts-input:active + &,
+  .program-form__contacts-input:focus + & {
+    fill: $color-green-two;
+  }
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 12px;
+  right: 15px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.program-form__contacts-icon--mail {
+  width: 18px;
+  height: 14px;
+  top: 15px;
+}
+
+.program-form__contacts-input--error {
+  & + .program-form__contacts-icon {
+    fill: $color-input-error;
+  }
+  border: 2px solid $color-input-error;
+}
+
+.program-form__comment {
+  @include reset-fieldset;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.program-form__comment-title {
+  font-size: 24px;
+  line-height: 24px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  max-width: 140px;
+}
+
+.program-form__comment-input {
+  width: 100%;
+  min-height: 150px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-black-font;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+  border: 1px solid $color-pinkish-grey50;
+}
+
+.program-form__list-checkbox {
+  @include reset-list;
+}
+
+.program-form__additionally {
+  @include reset-fieldset;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.program-form__additionally-title {
+  font-size: 24px;
+  line-height: 24px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  max-width: 165px;
+}
+
+.program-form__item-checkbox {
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.program-form__input-checkbox {
+  @include hidden;
+}
+
+.program-form__label-checkbox {
+  .program-form__input-checkbox + &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid $color-pinkish-grey;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .program-form__input-checkbox:checked + &::after {
+    content: "";
+    width: 22px;
+    height: 17px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    z-index: 2;
+  }
+  line-height: 18px;
+  padding-left: 46px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
