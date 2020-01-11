@@ -18,6 +18,7 @@
   font-weight: 400;
   margin: 0;
   margin-right: auto;
+  width: 50%;
 }
 
 .collaboration__address {
@@ -75,6 +76,11 @@
 
   .collaboration__wrapper {
     padding: 65px 30px 60px;
+    background-color: $color-bg-light-grey;
+  }
+
+  .collaboration__wrapper--index {
+    background-color: $color-white;
   }
 }
 

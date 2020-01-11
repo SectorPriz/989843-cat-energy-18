@@ -37,14 +37,16 @@
   </header>
   <main class="main-program">
     <section class="programs-selection">
-      <h1 class="programs-selection__title">Подбор программы</h1>
+      <div class="container">
+        <h1 class="programs-selection__title">Подбор программы</h1>
+      </div>
       <form class="programs-selection__form program-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="container">
+        <div class="container container-form">
           <p class="program-form__description">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
         </div>
         <div class="program-form__name-wrapper">
           <fieldset class="program-form__name">
-            <div class="container">
+            <div class="container container-form">
               <ul class="program-form__list">
                 <li class="program-form__item">
                   <label class="program-form__label program-form__label-nickname" for="nickname">Имя:*</label> <input
@@ -62,8 +64,8 @@
             </div>
           </fieldset>
           <fieldset class="program-form__task">
-            <div class="container">
-              <legend class="visually-hidden">Цель программы</legend>
+            <legend class="visually-hidden">Цель программы</legend>
+            <div class="container container-form">
               <ul class="program-form__list-radio">
                 <li class="program-form__item-radio">
                   <input class="program-form__input-radio" name="target" type="radio" id="slim" value="slim" checked>
@@ -81,36 +83,41 @@
             </div>
           </fieldset>
         </div>
-        <fieldset class="program-form__contacts">
-          <div class="container">
-            <legend class="program-form__contacts-title">Контактные данные (владельца кота)</legend>
+        <fieldset class="program-form__contacts program-form__fieldset">
+          <legend class="program-form__contacts-title program-form__legend">Контактные данные (владельца кота)</legend>
+          <div class="container container-form">
             <ul class="program-form__contacts-list">
               <li class="program-form__contacts-item">
                 <label class="program-form__contacts-label program-form__contacts-label--phone"
                   for="email">E-mail:*</label> <input class="program-form__contacts-input" type="email" id="email"
                 placeholder="kuklachev@gmail.com">
-                <svg class="program-form__contacts-icon program-form__contacts-icon--mail" width="18" height="14" viewBox="0 0 17 13"><path
-                    d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z"/></svg>
+                <svg class="program-form__contacts-icon program-form__contacts-icon--mail" width="18" height="14"
+                  viewBox="0 0 17 13">
+                  <path
+                    d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z"/>
+                </svg>
               </li>
               <li class="program-form__contacts-item">
                 <label class="program-form__contacts-label" for="phone">Телефон:*</label> <input
                 class="program-form__contacts-input" type="tel" id="phone" placeholder="8 (960) 900-60-90">
-                <svg class="program-form__contacts-icon" width="21" height="21" viewBox="0 0 20 20"><path
-                    d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zM8.1 19.4v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8H6.8v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1C1.5-.1.1 1.2 0 2.9V16.8c-.1 1.7 1.2 3.1 2.9 3.1H7.5c.3.1.6-.2.6-.5z"/></svg>
+                <svg class="program-form__contacts-icon" width="21" height="21" viewBox="0 0 20 20">
+                  <path
+                    d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zM8.1 19.4v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8H6.8v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1C1.5-.1.1 1.2 0 2.9V16.8c-.1 1.7 1.2 3.1 2.9 3.1H7.5c.3.1.6-.2.6-.5z"/>
+                </svg>
               </li>
             </ul>
           </div>
         </fieldset>
-        <fieldset class="program-form__comment">
-          <div class="container">
-            <legend class="program-form__comment-title">Комментарий</legend>
+        <fieldset class="program-form__comment program-form__fieldset">
+          <legend class="program-form__comment-title program-form__legend">Комментарий</legend>
+          <div class="container container-form">
             <textarea class="program-form__comment-input" name="comment" rows="10" wrap="soft"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
-        <fieldset class="program-form__additionally">
-          <div class="container">
-            <legend class="program-form__additionally-title">Дополнительно</legend>
+        <fieldset class="program-form__additionally program-form__fieldset">
+          <legend class="program-form__additionally-title program-form__legend">Дополнительно</legend>
+          <div class="container container-form">
             <ul class="program-form__list-checkbox">
               <li class="program-form__item-checkbox">
                 <input class="program-form__input-checkbox" name="sugar-substitute" type="checkbox"
@@ -131,16 +138,18 @@
             </ul>
           </div>
         </fieldset>
-        <div class="container">
-          <button class="program-form__button button" type="submit">Отправить заявку</button>
-          <small class="program-form__small">* — Обязательные поля</small>
+        <div class="container container-form">
+          <div class="program-form__button-wrapper">
+            <button class="program-form__button button" type="submit">Отправить заявку</button>
+            <small class="program-form__small">* — Обязательные поля</small>
+          </div>
         </div>
       </form>
     </section>
   </main>
   <footer class="footer">
     <section class="footer__collaboration collaboration">
-      <div class="collaboration__wrapper collaboration__wrapper--index">
+      <div class="collaboration__wrapper">
         <h2 class="collaboration__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
         <p class="collaboration__address">ул. Большая Конюшенная, д. 19/8 <span class="collaboration__address--city">Санкт-Петербург</span>
         </p>
