@@ -1,7 +1,6 @@
 .additional-card {
   display: flex;
   flex-direction: column;
-  padding: $padding-item;
 }
 
 .additional-card__description {
@@ -15,11 +14,78 @@
 
 .additional-card__title {
   line-height: 16px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .additional-card__button {
-  padding: 10px 0;
+  padding: 10px 0 9px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-card__value-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .additional-card__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-card__title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+
+  .additional-card__value {
+    margin-right: 50px;
+  }
+
+  .additional-card__value--water {
+    margin-right: 60px;
+  }
+
+  .additional-card {
+    border-bottom: 1px solid $color-pinkish-grey;
+    padding: 24px 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  .additional-card__value-wrapper {
+    align-items: center;
+  }
+
+  .additional-card__button {
+    width: 254px;
+    height: 40px;
+  }
+
+  .additional-card__title {
+    padding-bottom: 0;
+  }
+
+  .additional-card__value {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .additional-card__price {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }

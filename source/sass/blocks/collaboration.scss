@@ -2,6 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $color-grey-focus;
+  padding: 30px 20px 25px;
+}
+
+.collaboration__wrapper--index {
+  background-color: transparent;
 }
 
 .collaboration__title {
@@ -10,6 +16,9 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  margin: 0;
+  margin-right: auto;
+  width: 50%;
 }
 
 .collaboration__address {
@@ -17,4 +26,103 @@
   font-family: $font-ArialMT;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+  width: 50%;
+}
+
+.collaboration__map {
+  position: relative;
+}
+
+.collaboration__map-img {
+  position: relative;
+  width: 320px;
+  height: auto;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .collaboration {
+    max-width: 768px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .collaboration__map-img {
+    width: 768px;
+  }
+
+  .collaboration__title {
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 154px;
+    margin-left: 40px;
+  }
+
+  .collaboration__address {
+    font-size: 16px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    max-width: 160px;
+    margin-right: 40px;
+  }
+
+  .collaboration__address--city {
+    padding-top: 10px;
+  }
+
+  .collaboration__wrapper {
+    padding: 65px 30px 60px;
+    background-color: $color-bg-light-grey;
+  }
+
+  .collaboration__wrapper--index {
+    background-color: $color-white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .collaboration {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    //Появляется полоска от тега Picture
+    height: 400px;
+  }
+
+  .collaboration__map-img {
+    width: 1440px;
+  }
+
+  .collaboration__map {
+    z-index: 1;
+  }
+
+  .collaboration__wrapper {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    top: 95px;
+    left: 110px;
+    background-color: $color-white;
+    z-index: 2;
+    padding: 75px 60px 90px;
+  }
+
+  .collaboration__title {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+  }
+
+  .collaboration__address {
+    margin: 0;
+  }
+
+  .collaboration__address--city {
+    padding-top: 15px;
+  }
 }

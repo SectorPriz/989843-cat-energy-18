@@ -3,3 +3,19 @@
   line-height: 60px;
   font-weight: 400;
 }
+
+@media (min-width: $tablet-width) {
+  .programs-selection__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding-top: 52px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs-selection {
+    padding-top: 137px;
+  }
+}
