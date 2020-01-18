@@ -3,11 +3,13 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color-grey-focus;
-  padding: 30px 20px 25px;
+  padding: 28px 20px 25px;
 }
 
 .collaboration__wrapper--index {
-  background-color: transparent;
+  background-color: $color-white;
+  position: relative;
+  z-index: 2;
 }
 
 .collaboration__title {
@@ -32,9 +34,12 @@
 
 .collaboration__map {
   position: relative;
+  margin-top: -39px;
+  z-index: 1;
 }
 
 .collaboration__map-img {
+  display: block;
   position: relative;
   width: 320px;
   height: auto;
