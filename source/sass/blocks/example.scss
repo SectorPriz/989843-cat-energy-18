@@ -178,11 +178,19 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0;
-    padding-bottom: 140px;
+    padding-top: 13px;
+    padding-bottom: 50px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 51px;
   }
 
   .example__value-wrapper {
     display: flex;
+    padding-bottom: 84px;
   }
 
   .example__illustration-list {
@@ -203,6 +211,10 @@
     padding-left: 0;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .example__illustration-price--value {
+    padding-top: 11px;
   }
 
   .example__illustration-value {
@@ -273,6 +285,7 @@
   }
 
   .example__illustration-toggle {
+    padding-top: 18px;
     padding-bottom: 75px;
   }
 
@@ -293,7 +306,7 @@
   }
 
   .example__slider-list {
-    padding-bottom: 43px;
+    padding-bottom: 0;
   }
 }
 

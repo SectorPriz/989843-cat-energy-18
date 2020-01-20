@@ -56,7 +56,8 @@
   }
   position: relative;
   max-width: 320px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .collaboration__map-img {
@@ -93,7 +94,7 @@
   .collaboration__title {
     font-size: 20px;
     line-height: 25px;
-    max-width: 154px;
+    max-width: 155px;
     margin-left: 40px;
   }
 

@@ -110,11 +110,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 30px;
+    padding: 55px 0 60px 0;
+  }
+
+  .footer__academy-name {
+    padding-right: 20px;
+  }
+
+  .footer__social-item {
+    margin: 0 15px;
   }
 
   .footer__logo,
-  .footer__social-item,
   .footer__academy,
   .footer__social-list {
     padding: 0;

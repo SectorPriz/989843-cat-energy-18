@@ -1,5 +1,6 @@
 .hero {
-  @media (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dppx),
+    (min-resolution: 144dpi) {
     background-image: url("../img/index-background-mobile@2x.jpg");
     background-size: 320px auto;
   }
@@ -9,7 +10,6 @@
 }
 
 .hero-base {
-  //Временное решение
   background-image: linear-gradient(to bottom, $color-bg-green 25%, $color-bg-green 25%, $color-bg-green 61%, transparent 61%);
 }
 
@@ -63,7 +63,7 @@
 @media (min-width: $tablet-width) {
   .hero {
     background: none;
-    padding-top: 60px;
+    padding-top: 51px;
   }
 
   .hero-base {
@@ -73,7 +73,7 @@
   .hero__wrapper-title {
     background: none;
     align-items: flex-start;
-    padding-left: 82px;
+    padding-left: 87px;
     z-index: 2;
   }
 
@@ -89,7 +89,7 @@
     color: $color-black-font;
     font-size: 60px;
     line-height: 60px;
-    padding: 0 0 30px 0;
+    padding: 0 0 21px 0;
     text-align: left;
   }
 
@@ -121,7 +121,8 @@
 
 @media (min-width: $desktop-width) {
   .hero {
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dppx),
+      (min-resolution: 144dpi) {
       background-image: url("../img/index-background-desktop@2x.jpg");
       background-size: 720px auto;
     }
