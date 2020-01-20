@@ -1,5 +1,5 @@
 .main-nav__wrapper-head {
-  padding: 15px 0 10px 20px;
+  padding: 15px 0 3px 20px;
 }
 
 .main-nav__list {
@@ -26,11 +26,11 @@
     &::after {
       content: "";
       position: absolute;
-      width: 25px;
+      width: 23px;
       height: 2px;
       background-color: $color-black-two;
-      top: 26px;
-      right: 19px;
+      top: 24px;
+      right: 20px;
       box-shadow: 0 8px 0 0 $color-black-two, 0 16px 0 0 $color-black-two;
     }
   }
@@ -80,7 +80,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 24px;
+    padding-top: 21px;
   }
 
   .main-nav__wrapper-head {
@@ -98,7 +98,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    max-width: 1220px;
+    padding: 0 7.64%;
     z-index: 5;
     left: 50%;
     transform: translateX(-50%);

@@ -1,5 +1,5 @@
 .example {
-  background-color: #f2f2f2;
+  background-color: $color-bg-light-grey;
 }
 
 .example__title {
@@ -7,6 +7,8 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
+  padding-top: 7px;
+  margin-bottom: 23px;
 }
 
 .example__description {
@@ -14,6 +16,8 @@
   font-family: $font-ArialMT;
   font-size: 14px;
   line-height: 18px;
+  padding-right: 10px;
+  margin-bottom: 23px;
 }
 
 .example__illustration-list {
@@ -21,31 +25,32 @@
   display: flex;
   margin: 0 -15px;
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 18px;
 }
 
 .example__illustration-item {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 0 15px;
+  padding: 0 12px;
 }
 
 .example__illustration-value {
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
   border: 1px solid $color-pinkish-grey;
   border-radius: 3px;
   margin: 0;
 }
 
 .example__illustration-value--border-weight {
-  padding: 17px 44px;
+  padding: 13px 44px 20px 44px;
 }
 
 .example__illustration-value--border-day {
-  padding: 17px 24px;
+  padding: 13px 24px 20px 24px;
 }
 
 .example__illustration-description {
@@ -71,6 +76,7 @@
   display: flex;
   font-size: 14px;
   padding-left: 50px;
+  margin-bottom: 40px;
   color: $color-black-font;
   text-transform: uppercase;
 }
@@ -82,7 +88,8 @@
 .example__illustration-toggle {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 37px;
 }
 
 .example__illustration-button {
@@ -92,7 +99,21 @@
   line-height: 20px;
   text-transform: uppercase;
   background-color: inherit;
+  padding: 0;
   cursor: pointer;
+}
+
+.example__slider-item {
+  margin: 0 -20px;
+}
+
+.example__slider-item--img {
+  display: flex;
+  justify-content: center;
+}
+
+.example__img-slim {
+  width: 311px;
 }
 
 .example__img-pro {
@@ -157,11 +178,19 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0;
-    padding-bottom: 140px;
+    padding-top: 13px;
+    padding-bottom: 50px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 51px;
   }
 
   .example__value-wrapper {
     display: flex;
+    padding-bottom: 84px;
   }
 
   .example__illustration-list {
@@ -182,6 +211,10 @@
     padding-left: 0;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .example__illustration-price--value {
+    padding-top: 11px;
   }
 
   .example__illustration-value {
@@ -210,6 +243,7 @@
 
   .example__img-slim {
     height: 499px;
+    width: auto;
   }
 
   .example__illustration-scale {
@@ -251,6 +285,7 @@
   }
 
   .example__illustration-toggle {
+    padding-top: 18px;
     padding-bottom: 75px;
   }
 
@@ -271,7 +306,7 @@
   }
 
   .example__slider-list {
-    padding-bottom: 43px;
+    padding-bottom: 0;
   }
 }
 

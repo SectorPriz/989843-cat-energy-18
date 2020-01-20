@@ -3,11 +3,13 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color-grey-focus;
-  padding: 30px 20px 25px;
+  padding: 28px 20px 25px;
+  position: relative;
+  z-index: 2;
 }
 
 .collaboration__wrapper--index {
-  background-color: transparent;
+  background-color: $color-white;
 }
 
 .collaboration__title {
@@ -32,15 +34,38 @@
 
 .collaboration__map {
   position: relative;
+  margin-top: -39px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.collaboration__map-wrapper {
+  &::after {
+    content: "";
+    width: 55px;
+    height: 55px;
+    background: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+  position: relative;
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
 }
 
 .collaboration__map-img {
+  display: block;
   position: relative;
   width: 320px;
   height: auto;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  z-index: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -50,6 +75,18 @@
     position: relative;
   }
 
+  .collaboration__map-wrapper {
+    &::after {
+      width: 113px;
+      height: 106px;
+    }
+    max-width: 768px;
+  }
+
+  .collaboration__map {
+    margin-top: 0;
+  }
+
   .collaboration__map-img {
     width: 768px;
   }
@@ -57,7 +94,7 @@
   .collaboration__title {
     font-size: 20px;
     line-height: 25px;
-    max-width: 154px;
+    max-width: 155px;
     margin-left: 40px;
   }
 
@@ -89,7 +126,6 @@
     max-width: 1440px;
     margin: 0 auto;
     position: relative;
-    //Появляется полоска от тега Picture
     height: 400px;
   }
 
@@ -97,8 +133,16 @@
     width: 1440px;
   }
 
+  .collaboration__map-wrapper {
+    &::after {
+      left: auto;
+      right: 272px;
+    }
+    max-width: 1440px;
+  }
+
   .collaboration__map {
-    z-index: 1;
+    margin-top: 0;
   }
 
   .collaboration__wrapper {
