@@ -49,13 +49,13 @@
 .hero__button {
   color: $color-white;
   text-align: center;
-  padding: 13px 0;
-  position: absolute;
-  width: 100%;
-  font-size: 14px;
   line-height: 14px;
-  /*Пока только так, птому что когда позиционирую относительно контейнера, почему-то правая сторона прилипает к краю экрана (нет отступа в 20px)*/
-  bottom: -306px;
+  letter-spacing: 0.5px;
+  padding: 13px 0;
+  width: 100%;
+  position: absolute;
+  font-size: 14px;
+  bottom: -310px;
   left: 50%;
   transform: translateX(-50%);
 }

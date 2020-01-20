@@ -70,8 +70,9 @@
 }
 
 .features__text {
-  margin-bottom: 27px;
+  //margin-bottom: 27px;
   max-width: 260px;
+  min-height: 65px;
   position: relative;
   z-index: 2;
 }

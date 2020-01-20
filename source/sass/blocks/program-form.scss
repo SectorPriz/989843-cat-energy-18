@@ -397,8 +397,7 @@
 
   .program-form__task {
     border: 1px solid $color-pinkish-grey50;
-    margin-right: 70px;
-    margin-left: 70px;
+    margin: 0 9.1%;
     margin-bottom: 50px;
   }
 
@@ -590,37 +589,25 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    padding-left: 110px;
-    padding-right: 110px;
-    max-width: $desktop-width;
-    margin: 0 auto;
+    padding: 0 7.64%;
   }
 
   .program-form__name {
     width: 50%;
     border: none;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-right: 40px;
+    padding: 0;
   }
 
   .program-form__task {
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 80px;
-    margin-bottom: 0;
+    margin: 0;
     width: 50%;
     border: 1px solid $color-pinkish-grey50;
+    margin-left: 40px;
   }
 
-  .program-form__list {
-    margin-right: -110px;
-    margin-left: -110px;
-  }
-
-  .program-form__list-radio {
-    padding-left: 25px;
-    margin-right: -110px;
-    margin-left: -105px;
+  .program-form__item-radio {
+    margin-left: 70px;
   }
 
   .program-form__contacts-list {

@@ -1,5 +1,5 @@
 .example {
-  background-color: #f2f2f2;
+  background-color: $color-bg-light-grey;
 }
 
 .example__title {
@@ -105,6 +105,11 @@
 
 .example__slider-item {
   margin: 0 -20px;
+}
+
+.example__slider-item--img {
+  display: flex;
+  justify-content: center;
 }
 
 .example__img-slim {
@@ -226,6 +231,7 @@
 
   .example__img-slim {
     height: 499px;
+    width: auto;
   }
 
   .example__illustration-scale {

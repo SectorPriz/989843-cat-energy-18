@@ -1,8 +1,6 @@
 .container {
-  max-width: 320px;
-  margin: 0 auto;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 6.25%;
   position: relative;
 }
 
@@ -15,22 +13,26 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    max-width: 768px;
-    padding: 0 30px;
+    padding: 0 3.9%;
   }
 
   .container-form {
-    max-width: 768px;
     margin: 0 auto;
     width: 100%;
-    padding: 0 70px;
-    position: relative;
+    padding: 0 9.1%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    max-width: 1440px;
-    padding: 0 110px;
+    padding: 0 7.64%;
+  }
+
+  .container-form--name {
+    padding: 0;
+  }
+
+  .container-form--task {
+    padding: 0;
   }
 }
