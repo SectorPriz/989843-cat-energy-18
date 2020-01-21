@@ -375,6 +375,7 @@
 }
 
 .program-form__legend {
+  font-weight: 400;
   padding-right: 20px;
   padding-left: 20px;
   background-color: $color-white;
@@ -423,6 +424,9 @@
   }
 
   .program-form__input {
+    &::placeholder {
+      color: $color-grey-font;
+    }
     font-size: 20px;
     line-height: 20px;
     height: 52px;
@@ -477,6 +481,9 @@
   }
 
   .program-form__contacts-input {
+    &::placeholder {
+      color: $color-grey-font;
+    }
     height: 52px;
     font-size: 20px;
     line-height: 20px;
@@ -494,6 +501,9 @@
   }
 
   .program-form__comment-input {
+    &::placeholder {
+      color: $color-grey-font;
+    }
     font-size: 20px;
     line-height: 30px;
     text-align: left;
@@ -553,13 +563,13 @@
   .program-form__contacts-title {
     font-size: 36px;
     line-height: 36px;
-    max-width: inherit;
+    max-width: 595px;
   }
 
   .program-form__comment-title {
     font-size: 36px;
     line-height: 36px;
-    max-width: inherit;
+    max-width: 260px;
   }
 
   .program-form__additionally-title {
@@ -567,7 +577,7 @@
     line-height: 36px;
     padding-bottom: 35px;
     margin-bottom: 5px;
-    max-width: inherit;
+    max-width: 290px;
   }
 
   .program-form__fieldset {
@@ -608,6 +618,18 @@
 
   .program-form__item-radio {
     margin-left: 70px;
+  }
+
+  .program-form__contacts-title {
+    max-width: 595px;
+  }
+
+  .program-form__comment-title {
+    max-width: 260px;
+  }
+
+  .program-form__additionally-title {
+    max-width: 290px;
   }
 
   .program-form__contacts-list {
