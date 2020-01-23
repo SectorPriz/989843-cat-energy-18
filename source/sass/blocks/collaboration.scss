@@ -5,7 +5,12 @@
   background-color: $color-grey-focus;
   padding: 28px 20px 25px;
   position: relative;
-  z-index: 2;
+  min-height: 113px;
+  z-index: 3;
+}
+
+.collaboration {
+  position: relative;
 }
 
 .collaboration__wrapper--index {
@@ -32,63 +37,37 @@
   width: 50%;
 }
 
-.collaboration__map {
-  position: relative;
-  margin-top: -39px;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.collaboration__map-wrapper {
-  &::after {
-    content: "";
-    width: 55px;
-    height: 55px;
-    background: url("../img/map-pin.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-  }
-  position: relative;
-  max-width: 320px;
-  display: flex;
-  justify-content: center;
-}
-
 .collaboration__map-img {
-  display: block;
   position: relative;
+  display: block;
   width: 320px;
-  height: auto;
   z-index: 0;
+  margin: 0 auto;
+  margin-top: -39px;
+}
+
+.collaboration__map-google {
+  position: absolute;
+  height: 361px;
+  width: 100%;
+  top: 113px;
+  left: 0;
+  z-index: 2;
 }
 
 @media (min-width: $tablet-width) {
   .collaboration {
-    max-width: 768px;
-    margin: 0 auto;
     position: relative;
   }
 
-  .collaboration__map-wrapper {
-    &::after {
-      width: 113px;
-      height: 106px;
-    }
-    max-width: 768px;
-  }
-
-  .collaboration__map {
-    margin-top: 0;
-  }
-
   .collaboration__map-img {
+    margin-top: 0;
     width: 768px;
+  }
+
+  .collaboration__map-google {
+    height: 400px;
+    top: 201px;
   }
 
   .collaboration__title {
@@ -123,26 +102,23 @@
 
 @media (min-width: $desktop-width) {
   .collaboration {
+    position: relative;
+  }
+
+  .collaboration__wrapper-container {
+    position: relative;
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    position: relative;
-    height: 400px;
   }
 
   .collaboration__map-img {
     width: 1440px;
   }
 
-  .collaboration__map-wrapper {
-    &::after {
-      left: auto;
-      right: 272px;
-    }
-    max-width: 1440px;
-  }
-
-  .collaboration__map {
-    margin-top: 0;
+  .collaboration__map-google {
+    height: 400px;
+    top: 0;
   }
 
   .collaboration__wrapper {
@@ -150,7 +126,7 @@
     width: 570px;
     height: 201px;
     top: 95px;
-    left: 110px;
+    left: 90px;
     background-color: $color-white;
     z-index: 2;
     padding: 75px 60px 90px;
