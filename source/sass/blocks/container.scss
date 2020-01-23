@@ -15,24 +15,10 @@
   .container {
     padding: 0 3.9%;
   }
-
-  .container-form {
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 9.1%;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     padding: 0 7.6%;
-  }
-
-  .container-form--name {
-    padding: 0;
-  }
-
-  .container-form--task {
-    padding: 0;
   }
 }

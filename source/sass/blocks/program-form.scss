@@ -107,7 +107,7 @@
   }
 
   .program-form__input-radio:active + & {
-    color: rgba(34, 34, 34, 0.3);
+    color: $color-input-radio-active;
   }
 
   .program-form__input-radio:checked + &::after {
@@ -326,7 +326,7 @@
   }
 
   .program-form__input-checkbox:active + & {
-    color: rgba(34, 34, 34, 0.3);
+    color: $color-input-radio-active;
   }
   line-height: 18px;
   padding-left: 46px;
