@@ -126,10 +126,10 @@
     width: 570px;
     height: 201px;
     top: 95px;
-    left: 90px;
+    left: 110px;
     background-color: $color-white;
     z-index: 2;
-    padding: 75px 60px 90px;
+    padding: 61px 80px 56px;
   }
 
   .collaboration__title {
@@ -140,6 +140,7 @@
 
   .collaboration__address {
     margin: 0;
+    text-align: left;
   }
 
   .collaboration__address--city {

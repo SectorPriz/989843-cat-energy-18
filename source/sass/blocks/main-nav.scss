@@ -1,5 +1,5 @@
 .main-nav__wrapper-head {
-  padding: 11px 0 6px 20px;
+  padding: 14px 0 4px 20px;
 }
 
 .main-nav__list {
@@ -33,6 +33,10 @@
       right: 20px;
       box-shadow: 0 8px 0 0 $color-black-two, 0 16px 0 0 $color-black-two;
     }
+  }
+
+  .main-nav--closed {
+    border-bottom: 1px solid $color-grey-focus;
   }
 
   .main-nav--opened .main-nav__toggle {

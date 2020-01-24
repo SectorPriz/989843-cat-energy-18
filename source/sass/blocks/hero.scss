@@ -130,7 +130,7 @@
     background-repeat: no-repeat;
     background-position: right top;
     display: flex;
-    padding-top: 200px;
+    padding-top: 222px;
   }
 
   .hero-base {
@@ -139,10 +139,15 @@
 
   .hero__wrapper {
     display: flex;
+    padding-bottom: 52px;
   }
 
   .hero__wrapper-img {
     flex-direction: row;
+  }
+
+  .hero__wrapper-title {
+    padding-left: 82px;
   }
 
   .hero__title {
@@ -150,7 +155,7 @@
   }
 
   .hero__subtitle {
-    padding: 35px 0 53px;
+    padding: 44px 0 55px;
   }
 
   .hero__img {

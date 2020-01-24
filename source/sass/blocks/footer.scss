@@ -94,6 +94,34 @@
     background-color: $color-bg-light-grey;
   }
 
+  .footer__social-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0 40px;
+  }
+
+  .footer__academy-name {
+    padding-right: 20px;
+  }
+
+  .footer__social-item {
+    margin: 0 15px;
+  }
+
+  .footer__logo,
+  .footer__academy {
+    padding: 0;
+    border: none;
+  }
+
+  .footer__social-list {
+    border: none;
+    padding-top: 3px;
+    padding-left: 25px;
+    padding-right: 0;
+  }
+
   .footer__social-img--vk {
     width: 30px;
     height: 16px;
@@ -112,24 +140,12 @@
 
 @media (min-width: $tablet-width) {
   .footer__social-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 55px 0 60px 0;
+    padding: 39px 0 36px;
   }
 
-  .footer__academy-name {
-    padding-right: 20px;
-  }
-
-  .footer__social-item {
-    margin: 0 15px;
-  }
-
-  .footer__logo,
-  .footer__academy,
   .footer__social-list {
-    padding: 0;
     border: none;
+    padding-left: 24px;
+    padding-right: 0;
   }
 }
