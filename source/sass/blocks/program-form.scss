@@ -19,13 +19,13 @@
 .program-form__name {
   @include reset-fieldset;
   border-bottom: 1px solid $color-grey-border;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 10px;
 }
 
 .program-form__label {
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 13px;
   cursor: pointer;
 }
 
@@ -60,7 +60,7 @@
   text-transform: uppercase;
   height: 45px;
   border: 1px solid $color-pinkish-grey50;
-  padding-left: 15px;
+  padding-left: 13px;
   width: 100%;
 }
 
@@ -141,7 +141,7 @@
 .program-form__task {
   @include reset-fieldset;
   border-bottom: 1px solid $color-grey-border;
-  padding-top: 30px;
+  padding-top: 21px;
 }
 
 .program-form__contacts {
@@ -157,8 +157,8 @@
   font-size: 24px;
   line-height: 24px;
   padding: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   max-width: 221px;
 }
 
@@ -235,14 +235,14 @@
 
 .program-form__comment {
   @include reset-fieldset;
-  padding-bottom: 25px;
+  margin-top: -24px;
 }
 
 .program-form__comment-title {
   font-size: 24px;
   line-height: 24px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 29px;
   max-width: 160px;
 }
 
@@ -253,7 +253,7 @@
     border: 1px solid $color-black-font;
   }
   width: 100%;
-  min-height: 150px;
+  height: 150px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -277,14 +277,14 @@
   font-size: 24px;
   line-height: 24px;
   padding-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 29px;
   margin-bottom: 5px;
   max-width: 185px;
 }
 
 .program-form__item-checkbox {
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 }
 
 .program-form__input-checkbox {
@@ -367,7 +367,7 @@
     height: 3px;
     background-color: $color-bg-green;
     position: absolute;
-    top: 43px;
+    top: 41px;
     z-index: 1;
   }
   position: relative;
@@ -376,6 +376,8 @@
 
 .program-form__legend {
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 6px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: $color-white;

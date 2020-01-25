@@ -14,7 +14,7 @@
   }
   display: flex;
   justify-content: center;
-  padding: 44px 0 33px;
+  padding: 41px 0 33px;
 }
 
 .footer__social {
@@ -28,6 +28,7 @@
   justify-content: center;
   align-items: center;
   border-top: 1px solid $color-grey-border;
+  padding-right: 9px;
 }
 
 .footer__social-item {
@@ -138,7 +139,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .footer__social-wrapper {
     padding: 39px 0 36px;
   }
